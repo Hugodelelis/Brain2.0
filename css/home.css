@@ -83,12 +83,13 @@ main {
 
 .search-help {
     background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: absolute;
     top: 26em;
     margin: 0 3em;
     padding: 2em;
     margin: 0 3em;
-    width: 35%;
+    width: 30%;
 }
 
 .search-help h2 {
