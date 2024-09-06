@@ -24,7 +24,7 @@ body {
 }
 
 footer {
-    background-color: var(--blue-010);
+    background-color: var(--grey);
     padding: 1em;
     text-align: center;
     color: var(--white);
