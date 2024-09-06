@@ -186,7 +186,23 @@ main {
 }
 
 @media (max-width: 730px) {
+    .numbers {
+        padding: 0.5em;
+    }
+
     .container-numbers {
         padding: 2em 3em;
     }
+}
+
+.views {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.views h3 {
+    color: var(--black);
 }
