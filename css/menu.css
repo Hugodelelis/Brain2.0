@@ -13,12 +13,21 @@
     --white: #fff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
 a {
     text-decoration: none;
 }
 
 header {
-    font-family: "Nunito Sans", sans-serif;
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
@@ -61,9 +70,14 @@ header h1 .bi.bi-slack {
 }
 
 .container-menu .btn:hover {
-    color: var(--green);
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 0.5em;
 }
 
+.dropdown-menu {
+    background-color: var(--white);
+    
+}
 
 
 
