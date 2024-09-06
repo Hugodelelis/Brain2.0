@@ -28,16 +28,19 @@ button {
     border: none;
 }
 
-.btn-primary {
-    background-color: transparent;
+.a-btn {
     color: var(--black);
-    border-color: var(--blue-010);
+    background-color: var(--blue);
     transition: 0.4s all ease;
+    padding: 0.5em;
+    border: 2px solid var(--blue);
+    color: var(--white);
+    border-radius: 0.6em;
 }
 
-.btn-primary:hover {
-    background-color: var(--blue);
-    color: var(--white);
+.a-btn:hover {
+    background-color: transparent;
+    color: var(--black);
 }
 
 
