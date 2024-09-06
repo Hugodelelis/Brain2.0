@@ -1,0 +1,74 @@
+:root {
+    --blue: #205072;
+    --blue-010: #002c53;
+
+    --green: #32909C;
+    --green-010: #56C595;
+    --green-020: #7BE495;
+    --green-030: #CFF3D2;
+
+    --grey: #b1b1b1;
+
+    --black: rgb(55 65 81);
+    --white: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0.2em 2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+header h1 {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+header h1 .bi.bi-slack {
+    margin-right: 0.2em;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+.container-menu a .bi.bi-person-circle {
+    color: var(--black);
+    margin-right: 0.3em;
+}
+
+.container-menu .btn {
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    font-size: 36px;
+    transition: 0.4s all ease;
+}
+
+.container-menu .btn:hover {
+    color: var(--green);
+}
+
+
+
+
+@media(max-width: 730px) {
+    header {
+        padding: 0.5em;
+    }
+}
