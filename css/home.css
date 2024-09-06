@@ -171,7 +171,11 @@ main {
     gap: 2.5em; 
 }
 
-.container-numbers h2, h3, p {
+.container-numbers .phone h2, h3 {
+    color: var(--white);
+}
+
+.container-numbers .phone p {
     color: var(--white);
 }
 
@@ -199,6 +203,10 @@ main {
     }
 }
 
+
+
+
+
 .views {
     display: flex;
     flex-direction: column;
@@ -219,6 +227,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 1em;
 }
 
 .container-artigos {
@@ -228,12 +237,24 @@ main {
     margin: 2em 0;
 }
 
-.container-artigos h3 {
+.container-artigos h3, p {
     color: var(--black);
 }
 
 .artigo-content {
     padding: 1em 2em;
+}
+
+.artigo-content .btn-primary {
+    background-color: transparent;
+    color: var(--black);
+    border-color: var(--blue-010);
+    transition: 0.4s all ease;
+}
+
+.artigo-content .btn-primary:hover {
+    background-color: var(--blue-010);
+    color: var(--white);
 }
 
 .artigo-content-1 {
@@ -248,6 +269,19 @@ main {
     background-color: var(--green-020);
 }
 
+.red {
+    color: red;
+}
+
+.assets-artigo button {
+    background-color: transparent;
+    border: none;
+    padding: 0.5em;
+}
+
+.assets-artigo .bi.bi-heart-fill {
+    text-align: center;
+}
 
 @media (max-width: 992px) {
     .container-artigos {
@@ -282,7 +316,7 @@ main {
 .termos-uso, .termos-servico {
     background-color: var(--green-010);
     padding: 1em 2em;
-    border-radius: 1em 0 0 1em;
+    border-radius: 0 1em;
 }
 
 .termos-servico {
