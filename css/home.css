@@ -1,0 +1,82 @@
+:root {
+    --blue: #205072;
+    --blue-010: #002c53;
+
+    --green: #32909C;
+    --green-010: #56C595;
+    --green-020: #7BE495;
+    --green-030: #CFF3D2;
+
+    --grey: #b1b1b1;
+
+    --black: rgb(55 65 81);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+main {
+    padding-top: 4em;
+}
+
+.slider-container {
+    width: 100vw;
+    height:35em;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    height:30em;
+    width: 300%;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: lightblue;
+    color: white;
+    padding: 1.5em 3em;
+}
+
+#slide1 {
+    background-color: var(--green-010);
+}
+
+#slide2 {
+    background-color: var(--green-020);
+}
+
+#slide3 {
+    background-color: var(--green-030);
+}
+
+.buttons {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.buttons button {
+    background-color: transparent;
+    font-size: 2em;
+    color: var(--black);
+    border: none;
+}

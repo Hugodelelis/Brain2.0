@@ -10,9 +10,10 @@
     
     <link rel="shortcut icon" href="assets/favicon/favi.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/home.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-    <script src="js/menu.js" defer></script>
+    <script src="js/slides.js" defer></script>
 
     <title>Brain</title>
 </head>
@@ -38,5 +39,24 @@
             </div>
         </div>
     </header> 
+
+    <main>
+        <section class="introduction">
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide" id="slide1">Tela 1</div>
+                    <div class="slide" id="slide2">Tela 2</div>
+                    <div class="slide" id="slide3">Tela 3</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="prev" onclick="prevSlide()"><i class="bi bi-arrow-left"></i></button>
+                <button class="next" onclick="nextSlide()"><i class="bi bi-arrow-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+
+
 </body>
 </html>
