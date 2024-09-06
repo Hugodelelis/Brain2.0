@@ -23,12 +23,25 @@ body {
     font-family: "Nunito Sans", sans-serif;
 }
 
+.btn-primary {
+    background-color: transparent;
+    color: var(--black);
+    border-color: var(--blue-010);
+    transition: 0.4s all ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+
 main {
     padding-top: 4em;
 }
 
 .slider-container {
-    height: 34em;
+    height: 36em;
     overflow: hidden;
     position: relative;
 }
@@ -42,12 +55,24 @@ main {
 
 .slide {
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     font-size: 2rem;
     color: white;
     padding: 1em 1.5em;
+}
+
+.slide .content {
+    font-size: 18px;
+    margin-bottom: 5em;
+    padding: 2em 0.5em;
+    text-align: justify;
+}
+
+.slide img {
+    margin: auto 0 auto auto;
+    max-height: 15em;
+    max-width: 15em;
 }
 
 #slide1 {
@@ -76,6 +101,22 @@ main {
     font-size: 2em;
     color: var(--black);
     border: none;
+}
+
+@media (max-width: 1200px) {
+    .slide {
+        grid-template-columns: 1fr;
+    }
+
+    .slide img {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .slide {
+        padding: 0.5em;
+    }
 }
 
 .search-help {
@@ -122,6 +163,7 @@ main {
     .search-help {
         width: 50%;
         left: 0em;
+        top: 28em
     }
 }
 
@@ -130,6 +172,7 @@ main {
         width: 60%;
         margin: 0 0.5em;
         left: 0em;
+        top: 31em
     }
 
     .buttons {
@@ -157,7 +200,6 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2em;
-    padding-top: 0;
 }
 
 .container-numbers {
@@ -203,24 +245,18 @@ main {
     }
 }
 
-
-
-
-
 .views {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 4em;
+    text-align: center;
 }
 
 .views h3 {
     color: var(--black);
 }
-
-
-
 
 .artigos-top {
     display: flex;
@@ -243,18 +279,6 @@ main {
 
 .artigo-content {
     padding: 1em 2em;
-}
-
-.artigo-content .btn-primary {
-    background-color: transparent;
-    color: var(--black);
-    border-color: var(--blue-010);
-    transition: 0.4s all ease;
-}
-
-.artigo-content .btn-primary:hover {
-    background-color: var(--blue-010);
-    color: var(--white);
 }
 
 .artigo-content-1 {
@@ -292,9 +316,6 @@ main {
         margin: 2em 0;
     }
 }
-
-
-
 
 
 .termos {
