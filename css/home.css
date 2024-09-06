@@ -64,6 +64,7 @@ main {
 
 .buttons {  
     padding: 2em;
+    padding-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,12 +150,14 @@ main {
     }
 }
 
+
 .numbers {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2em;
+    padding-top: 0;
 }
 
 .container-numbers {
@@ -201,7 +204,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 4em;
 }
 
 .views h3 {
@@ -210,11 +213,63 @@ main {
 
 
 
+
+.artigos-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-artigos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.container-artigos h3 {
+    color: var(--black);
+}
+
+.artigo-content {
+    padding: 1em 2em;
+}
+
+.artigo-content-1 {
+    background-color: var(--green-010);
+}
+
+.artigo-content-2 {
+    background-color: var(--green-030);
+}
+
+.artigo-content-3 {
+    background-color: var(--green-020);
+}
+
+
+@media (max-width: 992px) {
+    .container-artigos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2em;
+        margin: 2em 0;
+    }
+}
+
+
+
+
+
 .termos {
     display: flex;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
-    padding: 1em 3em;
+    padding: 4em;
+    gap: 1em;
 }
 
 .termos h2 {
@@ -231,17 +286,7 @@ main {
 }
 
 .termos-servico {
-    border-radius: 0 1em 1em 0;
+    border-radius: 0 1em;
     background-color: var(--green-020);
 }
 
-@media (max-width: 992px) {
-    .termos {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .termos-uso, .termos-servico { 
-        border-radius: 1em;
-    }
-}
