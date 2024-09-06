@@ -29,7 +29,7 @@ main {
 
 .slider-container {
     width: 100vw;
-    height:35em;
+    height:32em;
     overflow: hidden;
     position: relative;
 }
@@ -39,7 +39,7 @@ main {
     justify-content: center;
     align-items: center;
     transition: transform 1s ease-in-out;
-    height:30em;
+    height: 30em;
     width: 300%;
 }
 
@@ -79,4 +79,72 @@ main {
     font-size: 2em;
     color: var(--black);
     border: none;
+}
+
+.search-help {
+    background-color: var(--white);
+    position: absolute;
+    top: 26em;
+    margin: 0 3em;
+    padding: 2em;
+    margin: 0 3em;
+    width: 35%;
+}
+
+.search-help h2 {
+    font-size: 25px;
+}
+
+.search-help #search {
+    border: none;
+    border-bottom: 3px solid var(--green);
+    border-radius: none;
+    margin-left: 1em;
+    width: 50%;
+    font-size: 16px;
+}
+
+.search-help #search:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--black);
+}
+
+.search-help #search::placeholder {
+    color: var(--grey);
+}
+
+@media (max-width: 1400px) {
+    .search-help {
+        width: 50%;
+        left: 0em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .search-help {
+        width: 50%;
+        left: 0em;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-help {
+        width: 60%;
+        margin: 0 0.5em;
+        left: 0em;
+    }
+}
+
+@media (max-width: 730px) {
+    .search-help {
+        width: 85%;
+        padding: 2em 1em;
+        margin: 0 0.5em;
+        left: 0em;
+    }
+
+    .search-help h2 {
+        font-size: 18px;
+    }
 }
