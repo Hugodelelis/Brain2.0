@@ -28,7 +28,6 @@ main {
 }
 
 .slider-container {
-    width: 100vw;
     height: 34em;
     overflow: hidden;
     position: relative;
@@ -48,7 +47,7 @@ main {
     justify-content: center;
     font-size: 2rem;
     color: white;
-    padding: 1.5em 3em;
+    padding: 1em 1.5em;
 }
 
 #slide1 {
