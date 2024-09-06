@@ -158,7 +158,7 @@ main {
 }
 
 .container-numbers {
-    background-color: red;
+    background-color: var(--blue);
     text-align: left;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -192,6 +192,7 @@ main {
 
     .container-numbers {
         padding: 2em 3em;
+        min-width: 90%;
     }
 }
 
