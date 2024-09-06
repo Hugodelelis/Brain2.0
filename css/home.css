@@ -177,7 +177,7 @@ main {
         width: 60%;
         margin: 0 0.5em;
         left: 0em;
-        top: 31em
+        top: 27em
     }
 
     .buttons {
@@ -190,6 +190,7 @@ main {
         width: 85%;
         padding: 2em 1em;
         margin: 0 0.5em;
+        top: 31em;
         left: 0em;
     }
 
