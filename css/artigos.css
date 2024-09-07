@@ -1,0 +1,159 @@
+:root {
+    --blue: #205072;
+    --blue-010: #002c53;
+
+    --green: #32909C;
+    --green-010: #56C595;
+    --green-020: #7BE495;
+    --green-030: #CFF3D2;
+
+    --grey: #b1b1b1;
+
+    --black: rgb(55 65 81);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+button {
+    border: none;
+}
+
+.search-artigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30em;
+}
+
+.search-artigo button {
+    background-color: transparent;
+    padding: 0.8em;
+    transition: 0.4s all ease;
+}
+
+.search-artigo button:hover {
+    background-color: var(--green-030);
+    border-radius: 1em;
+}
+
+@media(max-width:730px) {
+    .search-artigo {
+        min-width: 20em;
+    }
+}
+
+.search-artigo #search {
+    border: none;
+    border-bottom: 3px solid var(--green);
+    margin-left: 1em;
+    width: 50%;
+    font-size: 16px;
+    min-width: 90%;
+}
+
+.search-artigo #search:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--black);
+}
+
+.search-artigo #search::placeholder {
+    color: var(--grey);
+}
+
+.a-btn {
+    color: var(--black);
+    background-color: var(--blue);
+    transition: 0.4s all ease;
+    padding: 0.5em;
+    border: 2px solid var(--blue);
+    color: var(--white);
+    border-radius: 0.6em;
+}
+
+.a-btn:hover {
+    background-color: transparent;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+main {
+    padding-top: 7em;
+    min-height: 100vh;
+}
+
+.artigos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.container-artigos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.container-artigos h3 {
+    font-weight: 600;
+}
+
+.container-artigos h3, p {
+    color: var(--black);
+}
+
+.artigo-content {
+    padding: 1em 2em;
+}
+
+.artigo-content-1 {
+    background-color: var(--green-010);
+}
+
+.artigo-content-2 {
+    background-color: var(--green-030);
+}
+
+.artigo-content-3 {
+    background-color: var(--green-020);
+}
+
+.red {
+    color: red;
+}
+
+.assets-artigo button {
+    background-color: transparent;
+    border: none;
+    padding: 0.5em;
+    position: relative;
+}
+
+.assets-artigo .bi.bi-heart-fill {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .container-artigos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2em;
+        margin: 2em 0;
+    }
+}
+

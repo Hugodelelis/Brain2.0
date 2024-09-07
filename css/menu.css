@@ -88,6 +88,10 @@ header h1 .bi.bi-slack {
     background-color: var(--white);
     
 }
+.dropdown-item:active{
+    background-color: var(--green-030);
+    color: var(--black);
+}
 
 @media(max-width: 730px) {
     header {

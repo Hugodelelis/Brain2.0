@@ -40,7 +40,8 @@ button {
 
 .a-btn:hover {
     background-color: transparent;
-    color: var(--black);
+    color: var(--blue);
+    font-weight: 700;
 }
 
 
@@ -76,6 +77,9 @@ main {
     padding: 2em 0.5em;
     text-align: justify;
 }
+.slide h1{
+    font-weight: 700;
+}
 
 .slide img {
     margin: auto 0 auto auto;
@@ -86,6 +90,7 @@ main {
 #slide1 {
     background-color: var(--green-010);
 }
+
 
 #slide2 {
     background-color: var(--green-020);
@@ -140,6 +145,17 @@ main {
 
 .search-help h2 {
     font-size: 25px;
+}
+
+.search-help button {
+    background-color: transparent;
+    padding: 0.5em;
+    transition: 0.4s all ease;
+}
+
+.search-help button:hover {
+    background-color: var(--green-030);
+    border-radius: 0.7em;
 }
 
 .search-help #search {
@@ -326,7 +342,6 @@ main {
     }
 }
 
-
 .termos {
     display: flex;
     flex-direction: column;
@@ -343,14 +358,16 @@ main {
     margin-bottom: 0;
 }
 
-.termos-uso, .termos-servico {
-    background-color: var(--green-010);
-    padding: 1em 2em;
-    border-radius: 0 1em;
-}
-
 .termos-servico {
     border-radius: 0 1em;
+    padding: 1em 2em;
     background-color: var(--green-020);
+    border: 1px solid var(--green-020);
+    transition: 0.4 all ease;
+}
+
+.termos button:hover {
+    background-color: transparent;
+    border: 1px solid var(--green-020);
 }
 
