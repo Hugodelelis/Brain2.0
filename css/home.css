@@ -363,7 +363,7 @@ main {
     padding: 1em 2em;
     background-color: var(--green-020);
     border: 1px solid var(--green-020);
-    transition: 0.4 all ease;
+    transition: 0.4s all ease;
 }
 
 .termos button:hover {
