@@ -44,6 +44,10 @@ button {
     font-weight: 700;
 }
 
+body.modal-open {
+    padding-right: 0 !important;
+    overflow-y: scroll;
+}
 
 main {
     padding-top: 4em;

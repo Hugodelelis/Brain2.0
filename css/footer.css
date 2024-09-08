@@ -28,4 +28,5 @@ footer {
     padding: 1em;
     text-align: center;
     color: var(--white);
+    min-width: 100%;
 }

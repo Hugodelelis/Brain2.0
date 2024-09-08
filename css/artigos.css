@@ -28,6 +28,11 @@ button {
     border: none;
 }
 
+main {
+    padding-top: 7em;
+    min-height: 100vh;
+}
+
 .search-artigo {
     display: flex;
     align-items: center;
@@ -85,11 +90,6 @@ button {
     background-color: transparent;
     color: var(--blue);
     font-weight: 700;
-}
-
-main {
-    padding-top: 7em;
-    min-height: 100vh;
 }
 
 .artigos {
