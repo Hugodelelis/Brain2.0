@@ -113,3 +113,7 @@ main {
     color: var(--black);
     box-shadow: none;
 }
+
+.number-modal {
+    color: var(--green-010);
+}
