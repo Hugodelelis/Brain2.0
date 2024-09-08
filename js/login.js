@@ -1,51 +1,59 @@
 const usuarios = [
     {
-        login: 'Lucas',
-        pass: 'lucaselindo'
+        email: 'lucas@gmail.com',
+        user: 'Lucas',
+        pass: '123'
     },
     {
-        login: 'Hugo',
-        pass: 'hugoefeio'
+        email: 'hugo@gmail.com',
+        user: 'Hugo',
+        pass: '123'
     },
     {
-        login: 'Thalles',
-        pass: 'thallesefeio'
+        email: 'thalles@gmail.com',
+        user: 'Thalles',
+        pass: '123'
     },
     {
-        login: 'Marcos',
-        pass: 'marcosefeio'
+        email: 'marcos@gmail.com',
+        user: 'Marcos',
+        pass: '123'
     },
     {
-        login: 'Caio',
-        pass: 'caioefeio'
+        email: 'caio@gmail.com',
+        user: 'Caio',
+        pass: '123'
     },
     {
-        login: 'Mylena',
-        pass: 'mylenaelinda'
+        email: 'mylena@gmail.com',
+        user: 'Mylena',
+        pass: '123'
     },
 ]
 
 let botao = document.getElementById('btnlogin');
 
 botao.addEventListener('click', function logar(){
-    let pegaUsuario = document.getElementById('login').value
-    let pegaSenha = document.getElementById('password').value
-    let validaLogin = false
+    let pegaEmail = document.getElementById('login').value;
+    let pegaSenha = document.getElementById('password').value;
+    let validaLogin = false;
+
+    document.querySelector('#form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
 
     for(let i in usuarios){
-        if(pegaUsuario == usuarios[i].login && pegaSenha == usuarios[i].pass){
-            validaLogin = true
-            break
-        }else{
-            validaLogin = false
+        if(pegaEmail == usuarios[i].email && pegaSenha == usuarios[i].pass){
+            validaLogin = true;
+
+            sessionStorage.setItem('usuarioLogado', usuarios[i].user);
+            break;
         }
     }
 
-    if(validaLogin == true){
-        alert ('ok')
+    if(validaLogin){
+        window.location.href = 'index.html';
     }else{
-        alert('erro')
+        alert('Erro: Usuário ou senha incorretos');
     }
-    
-})
-
+});

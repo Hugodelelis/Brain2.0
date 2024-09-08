@@ -17,6 +17,7 @@
     <script src="js/slides.js" defer></script>
     <script src="js/contador.js" defer></script>
     <script src="js/curtida.js" defer></script>
+    <script src="js/login.js"></script>
 
     <title>Brain</title>
 </head>
@@ -25,7 +26,7 @@
         <a href="#"><h1><i class="bi bi-slack"></i>Brain</h1></a>
 
         <div class="container-menu">
-            <a href="login.html"><i class="bi bi-person-circle"></i></a>
+            <span id="user" class="user-menu"> </span><a href="login.html"><i class="bi bi-person-circle"></i></a>
             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-list"></i>
             </button>
@@ -129,7 +130,7 @@
 
         <section class="views">
 
-            <h2>Obrigado por nos escolher!</h2>
+            <h2>Obrigado por nos escolher <span id="user"></span>!</h2>
             <h3 id="access-counter">0</h3>
             <h4>Acessos</h4>
 
@@ -221,5 +222,17 @@
         <span><i class="bi bi-c-circle"></i>Brain</span>
     </footer>
 
+
+    <script>
+        window.addEventListener('load', function() {
+            let usuarioLogado = sessionStorage.getItem('usuarioLogado');
+            if (usuarioLogado) {
+                document.querySelectorAll('#user').forEach(function(element) {
+                    element.innerHTML = usuarioLogado;
+                });
+            }
+            sessionStorage.clear();
+        });
+    </script>
 </body>
 </html>

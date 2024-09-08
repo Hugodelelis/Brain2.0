@@ -48,6 +48,11 @@ header {
     z-index: 10;
 }
 
+.user-menu {
+    font-size: 17px;
+    margin-right: 12px;
+}
+
 header h1 {
     color: var(--black);
     font-weight: bold;
