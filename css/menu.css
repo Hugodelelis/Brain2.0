@@ -80,8 +80,7 @@ header h1 .bi.bi-slack {
 }
 
 .container-menu .btn:hover {
-    color: var(--green);
-    border-radius: 0.5em;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-menu {
