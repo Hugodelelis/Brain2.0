@@ -55,12 +55,10 @@ section {
 
 .form-container {
     text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
     height: 550px;
-    display: flex;
-    flex-direction: column;
 }
 .container-style h1 {
     font-size: 2.6rem;
@@ -103,14 +101,6 @@ section {
     font-weight: 600;
 }
 
-.a-request {
-    color: (var(--black));
-    font-size: 18px;
-    text-decoration: none;
-    margin: 15px 0 10px;
-    font-weight: 500;
-}
-
 .a-request:hover {
     color: var(--green);
     font-weight: 600;
@@ -148,7 +138,6 @@ section {
 
 .container-style button:active{
     opacity: 0.8;
-
 }
 
 .social-icons {
@@ -177,6 +166,3 @@ section {
         font-size: 1.5em;
     }
 }
-
-
-

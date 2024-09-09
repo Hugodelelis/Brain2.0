@@ -117,3 +117,7 @@ main {
 .number-modal {
     color: var(--green-010);
 }
+
+.modal-footer {
+    justify-content: flex-start;
+}

@@ -17,7 +17,8 @@
     <script src="js/slides.js" defer></script>
     <script src="js/contador.js" defer></script>
     <script src="js/curtida.js" defer></script>
-    <script src="js/login.js"></script>
+    <script src="js/user.js" defer></script>
+    
 
     <title>Brain</title>
 </head>
@@ -26,21 +27,34 @@
         <a href="#"><h1><i class="bi bi-slack"></i>Brain</h1></a>
 
         <div class="container-menu">
-            <span id="user" class="user-menu"> </span><a href="login.html"><i class="bi bi-person-circle"></i></a>
+            <span id="user" class="user-menu"></span><i class="bi bi-person-circle"></i>
+
+            
+            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-gear"></i>
+            </button>
+            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html">Entrar</a></li>
+                <li><button class="dropdown-item" id="leave"></button></li>
+            </ul>
+            
+            <!-- Segundo dropdown -->
             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-list"></i>
             </button>
+            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#intro">Profissionais</a></li>
+                <li><a class="dropdown-item" href="artigos.html">Artigos</a></li>
+                <li><a class="dropdown-item" href="#">Comunidade</a></li>
+                <li><a class="dropdown-item" href="biblioteca.html">Biblioteca</a></li>
+                <li><a class="dropdown-item" href="dicas.html">Dicas</a></li>
+            </ul>
 
-            <div class="dropdown">
-                <ul class="dropdown-menu">
-                    <a class="dropdown-item" type="button" href="#">Home</a>
-                    <a class="dropdown-item" type="button" href="#intro">Profissionais</a>
-                    <a class="dropdown-item" type="button" href="artigos.html">Artigos</a>
-                    <a class="dropdown-item" type="button">Comunidade</a>
-                    <a class="dropdown-item" type="button" href="biblioteca.html">Biblioteca</a>
-                    <a class="dropdown-item" type="button" href="dicas.html">Dicas</a>
-                </ul>
-            </div>
+        </div>
+
         </div>
     </header> 
 
@@ -221,18 +235,5 @@
         <i class="bi bi-slack"></i>
         <span><i class="bi bi-c-circle"></i>Brain</span>
     </footer>
-
-
-    <script>
-        window.addEventListener('load', function() {
-            let usuarioLogado = sessionStorage.getItem('usuarioLogado');
-            if (usuarioLogado) {
-                document.querySelectorAll('#user').forEach(function(element) {
-                    element.innerHTML = usuarioLogado;
-                });
-            }
-            sessionStorage.clear();
-        });
-    </script>
 </body>
 </html>

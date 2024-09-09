@@ -64,6 +64,12 @@ header h1 .bi.bi-slack {
     margin-right: 0.2em;
 }
 
+@media(max-width: 992px) {
+    header h1 {
+        font-size: 22px;
+    }
+}
+
 .container-menu {
     display: flex;
     justify-content: center;
@@ -71,27 +77,45 @@ header h1 .bi.bi-slack {
     font-size: 36px;
 }
 
-.container-menu a .bi.bi-person-circle {
+.container-menu .bi.bi-person-circle {
     color: var(--black);
-    margin-right: 0.3em;
+    margin-right: 0.2em;
+}
+
+@media(max-width: 992px) {
+    .container-menu .bi.bi-person-circle {
+        font-size: 31px;
+    }
+}
+
+.container-menu .btn .bi.bi-person-circle:hover {
+    background-color: none;
 }
 
 .container-menu .btn {
     background-color: var(--white);
     color: var(--black);
     border: none;
-    font-size: 36px;
+    font-size: 30px;
+    padding: 0.2em;
     transition: 0.4s all ease;
+}
+
+@media(max-width: 992px) {
+    .container-menu .btn {
+        font-size: 22px;
+    }
 }
 
 .container-menu .btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+
 .dropdown-menu {
     background-color: var(--white);
-    
 }
+
 .dropdown-item:active{
     background-color: var(--green-030);
     color: var(--black);

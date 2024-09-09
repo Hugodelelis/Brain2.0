@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/menu.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="js/user.js"></script>
 
     <title>Brain - Biblioteca</title>
 </head>
@@ -23,21 +24,34 @@
         <a href="index.html"><h1><i class="bi bi-slack"></i>Brain</h1></a>
 
         <div class="container-menu">
-            <a href="login.html"><i class="bi bi-person-circle"></i></a>
+            <span id="user" class="user-menu"></span><i class="bi bi-person-circle"></i>
+
+            
+            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-gear"></i>
+            </button>
+            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html">Entrar</a></li>
+                <li><button class="dropdown-item" id="leave"></button></li>
+            </ul>
+            
+            <!-- Segundo dropdown -->
             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-list"></i>
             </button>
+            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="index.html">Profissionais</a></li>
+                <li><a class="dropdown-item" href="artigos.html">Artigos</a></li>
+                <li><a class="dropdown-item" href="#">Comunidade</a></li>
+                <li><a class="dropdown-item" href="biblioteca.html">Biblioteca</a></li>
+                <li><a class="dropdown-item" href="dicas.html">Dicas</a></li>
+            </ul>
 
-            <div class="dropdown">
-                <ul class="dropdown-menu">
-                    <a class="dropdown-item" type="button" href="index.html">Home</a>
-                    <a class="dropdown-item" type="button" href="index.html">Profissionais</a>
-                    <a class="dropdown-item" type="button" href="artigos.html">Artigos</a>
-                    <a class="dropdown-item" type="button">Comunidade</a>
-                    <a class="dropdown-item" type="button" href="#">Biblioteca</a>
-                    <a class="dropdown-item" type="button" href="dicas.html">Dicas</a>
-                </ul>
-            </div>
+        </div>
+
         </div>
     </header> 
 

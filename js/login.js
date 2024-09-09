@@ -47,6 +47,7 @@ botao.addEventListener('click', function logar(){
             validaLogin = true;
 
             sessionStorage.setItem('usuarioLogado', usuarios[i].user);
+            sessionStorage.setItem('sair', 'Sair');
             break;
         }
     }
