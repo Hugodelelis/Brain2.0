@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+window.addEventListener('load', () => {
     let usuarioLogado = sessionStorage.getItem('usuarioLogado');
     let sair = this.sessionStorage.getItem('sair')
 
