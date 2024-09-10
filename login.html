@@ -45,7 +45,8 @@
             <div class="container container-style container-login d-flex" id="login-container">
                     <div class="sign-in form-container">
                         <form id="form">
-                            <h1>Entrar na sua conta</h1>
+                            <h1 id="title">Entrar na sua conta</h1>
+
                             <div class="social-icons m-1">
                                 <a href="#" class="icon btn btn-outline-dark"> 
                                     <i class="fab fa-google" title="Login Google"></i> 
@@ -55,16 +56,16 @@
                                 </a>
                             </div>
                             <div class="form-style">
-                                <input type="email" placeholder="Email" required id="login">
-                                <input type="password" placeholder="Senha" required id="password">
+                                <input type="email" placeholder="Email" id="login">
+                                <input type="password" placeholder="Senha" id="password">
                                 
-                                <a href="request.html" class="a-btn">  
+                                <a href="request.html" class="a-btn" type="button" target="_parent">  
                                 Esqueceu sua senha?
                                 </a>
                                 <button id="btnlogin">Entrar</button>
                                 
                                 <p>Não tem conta?</p>
-                                <a href="register.html" id="show-register" class="a-btn">Registre-se</a>
+                                <a href="register.html" id="show-register" class="a-btn" type="button" target="_parent">Registre-se</a>
                             </div>
                         </form>
                     </div>

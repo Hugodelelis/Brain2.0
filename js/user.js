@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    let usuarioLogado = sessionStorage.getItem('usuarioLogado');
+    let usuarioLogado = this.sessionStorage.getItem('usuarioLogado');
     let sair = this.sessionStorage.getItem('sair')
 
     if (usuarioLogado) {
@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
             element.innerHTML = usuarioLogado;
         });
 
-        document.querySelectorAll('#leave').forEach(function(element) {
+        document.querySelectorAll('#login-drop').forEach(function(element) {
             element.innerHTML = sair;
         });
 

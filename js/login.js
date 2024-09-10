@@ -47,14 +47,27 @@ botao.addEventListener('click', function logar(){
             validaLogin = true;
 
             sessionStorage.setItem('usuarioLogado', usuarios[i].user);
-            sessionStorage.setItem('sair', 'Sair');
+            sessionStorage.setItem('sair', '<li><button class="dropdown-item" id="leave">Sair</button></li>');
             break;
         }
     }
 
     if(validaLogin){
         window.location.href = 'index.html';
-    }else{
-        alert('Erro: Usuário ou senha incorretos');
+    } else {
+        let alerta = document.createElement('div');
+        alerta.classList.add('alert', 'alert-danger', 'alert-dismissible', 'fade', 'show');
+        alerta.setAttribute('role', 'alert');
+        alerta.innerHTML = `
+        <strong>Erro!</strong> Usuário ou senha inválidos (tente novamente). 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        let reference = document.querySelector('#title')
+
+        let existingAlert = document.querySelector('.alert.alert-danger');
+
+        if (!existingAlert || existingAlert.innerHTML !== alerta.innerHTML) {
+            reference.insertAdjacentElement('afterend', alerta);
+        }
     }
 });

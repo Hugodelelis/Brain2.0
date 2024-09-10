@@ -21,6 +21,7 @@ main {
     min-height: 100vh;
     padding: 0.5em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg,var(--green),var(--green-030) );
@@ -31,6 +32,17 @@ section {
     border-radius: 1.5rem;
     padding: 10px 10px 10px;
     margin-top: 5.5rem;
+}
+
+button.btn-close {
+    background-color: transparent !important;
+    padding: 0 !important;
+    transition: none !important;
+}
+
+button.btn-close:hover {
+    border: 0px !important;
+    box-shadow: none;
 }
 
 .sign-in {
