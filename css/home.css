@@ -150,8 +150,8 @@ main {
 
 .navigation-dots {
     text-align: center;
-    position: absolute;
     width: 100%;
+    margin-bottom: 1.5;
 }
 
 .navigation-dots .dot {
@@ -190,7 +190,7 @@ main {
 
 @media (max-width: 730px) {
     .buttons {
-        display: none;
+        margin-top: 0.5em;
         position: inherit;
     }
 }
