@@ -91,16 +91,13 @@ main {
     font-size: 18px;
     margin-bottom: 5em;
     padding: 2em 0.5em;
-    text-align: justify;
+    text-align: left;
 }
 
 
 @media (max-width: 730px) {
     .slide .content {
-        font-size: 18px;
-        margin-bottom: 5em;
         padding: 1em 0.5em;
-        text-align: justify;
     }
 }
 
