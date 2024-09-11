@@ -84,7 +84,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     font-size: 2rem;
     color: white;
-    padding: 1em 1.5em;
+    padding: 0.5em 1.5em;
 }
 
 .slide .content {
@@ -93,6 +93,17 @@ main {
     padding: 2em 0.5em;
     text-align: justify;
 }
+
+
+@media (max-width: 730px) {
+    .slide .content {
+        font-size: 18px;
+        margin-bottom: 5em;
+        padding: 1em 0.5em;
+        text-align: justify;
+    }
+}
+
 .slide h1{
     font-weight: 700;
 }
@@ -117,19 +128,27 @@ main {
 }
 
 .buttons {  
-    padding: 2em;
-    padding-bottom: 0;
+    position: absolute;
+    top: 36em;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 .buttons button {
     background-color: transparent;
+    padding: 0 0.2em;
     font-size: 2em;
     color: var(--black);
     border: none;
+    transition: 0.4s all ease;
+}
+
+.buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 0 0.2em;
 }
 
 @media (max-width: 1200px) {
@@ -145,6 +164,17 @@ main {
 @media (max-width: 992px) {
     .slide {
         padding: 0.5em;
+    }
+
+    .buttons {
+        top: 35em;
+    }
+}
+
+@media (max-width: 730px) {
+    .buttons {
+        padding: 1em;
+        position: inherit;
     }
 }
 
@@ -194,29 +224,25 @@ main {
 
 @media (max-width: 1400px) {
     .search-help {
-        width: 50%;
+        width: 38%;
         left: 0em;
     }
 }
 
 @media (max-width: 1200px) {
     .search-help {
-        width: 50%;
+        width: 60%;
         left: 0em;
-        top: 28em
+        top: 25em
     }
 }
 
 @media (max-width: 992px) {
     .search-help {
         width: 60%;
-        margin: 0 0.5em;
+        margin: 0.6em 1.6em;
         left: 0em;
-        top: 27em
-    }
-
-    .buttons {
-        padding: 1em;
+        top: 24em;
     }
 }
 
@@ -225,7 +251,7 @@ main {
         width: 85%;
         padding: 2em 1em;
         margin: 0 0.5em;
-        top: 31em;
+        top: 29em;
         left: 0em;
     }
 
@@ -234,6 +260,11 @@ main {
     }
 }
 
+@media (max-width: 350px) {
+    .search-help {
+        top: 30em;
+    }
+}
 
 .numbers {
     display: flex;
@@ -278,7 +309,7 @@ main {
 
 @media (max-width: 730px) {
     .numbers {
-        padding: 0.5em;
+        padding: 1.5em;
     }
 
     .container-numbers {
@@ -292,7 +323,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4em;
+    padding: 2em; 
     text-align: center;
 }
 
