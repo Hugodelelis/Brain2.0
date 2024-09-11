@@ -435,6 +435,7 @@ main {
 
 .termos button:hover {
     background-color: transparent;
+    box-shadow: none;
     border: 1px solid var(--green-020);
     color: var(--black);
 }
