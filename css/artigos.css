@@ -33,6 +33,23 @@ main {
     min-height: 100vh;
 }
 
+.a-btn {
+    color: var(--black);
+    background-color: var(--blue);
+    transition: 0.4s all ease;
+    padding: 0.5em;
+    border: 2px solid var(--blue);
+    color: var(--white);
+    border-radius: 0.6em;
+}
+
+.a-btn:hover {
+    background-color: transparent;
+    color: var(--blue);
+    transform: scale(1.05);
+}
+
+
 .search-artigo {
     display: flex;
     align-items: center;
@@ -42,8 +59,8 @@ main {
 
 .search-artigo button {
     background-color: transparent;
-    padding: 0.5em;
-    border-radius: 1em;
+    padding: 0.4em 0.6em;
+    border-radius: 0.7em;
     border: 2px solid var(--green);
     transition: 0.4s all ease;
 }
@@ -77,22 +94,6 @@ main {
 
 .search-artigo #search::placeholder {
     color: var(--grey);
-}
-
-.a-btn {
-    color: var(--black);
-    background-color: var(--blue);
-    transition: 0.4s all ease;
-    padding: 0.5em;
-    border: 2px solid var(--blue);
-    color: var(--white);
-    border-radius: 0.6em;
-}
-
-.a-btn:hover {
-    background-color: transparent;
-    color: var(--blue);
-    font-weight: 700;
 }
 
 .artigos {

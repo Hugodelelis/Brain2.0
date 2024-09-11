@@ -51,7 +51,7 @@ main {
 .a-btn:hover {
     background-color: transparent;
     color: var(--blue);
-    font-weight: 700;
+    transform: scale(1.05);
 }
 
 .dicas {
@@ -78,8 +78,8 @@ main {
 
 .search-dica button {
     background-color: transparent;
-    padding: 0.5em;
-    border-radius: 1em;
+    padding: 0.4em 0.6em;
+    border-radius: 0.7em;
     border: 2px solid var(--green);
     transition: 0.4s all ease;
 }

@@ -41,7 +41,7 @@ button {
 .a-btn:hover {
     background-color: transparent;
     color: var(--blue);
-    font-weight: 700;
+    transform: scale(1.05);
 }
 
 body.modal-open {
@@ -94,7 +94,6 @@ main {
     text-align: left;
 }
 
-
 @media (max-width: 730px) {
     .slide .content {
         padding: 1em 0.5em;
@@ -131,7 +130,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 1.2em;
 }
 
 .buttons button {
@@ -212,7 +211,7 @@ main {
 
 .search-help button {
     background-color: transparent;
-    padding: 0.5em;
+    padding: 0.4em 0.6em;
     transition: 0.4s all ease;
     border: 2px solid var(--green);
     border-radius: 0.7em;
