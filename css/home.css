@@ -417,15 +417,12 @@ main {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    padding: 4em;
+    padding: 3em;
     gap: 1em;
 }
 
 .termos h2 {
-    font-size: 1.4em;
-    color: var(--white);
-    text-align: center;
-    margin-bottom: 0;
+    color: var(--black);
 }
 
 .termos-servico {
