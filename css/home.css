@@ -423,6 +423,7 @@ main {
 
 .termos h2 {
     color: var(--black);
+    text-align: center;
 }
 
 .termos-servico {
