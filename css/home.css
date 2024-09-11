@@ -340,7 +340,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em; 
+    padding: 1em;
+    margin-bottom: 2em; 
     text-align: center;
 }
 
