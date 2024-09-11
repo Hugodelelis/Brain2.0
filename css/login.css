@@ -45,10 +45,6 @@ button.btn-close:hover {
     box-shadow: none;
 }
 
-.sign-in {
-    background-color: var(--white);
-}
-
 .form-style {
     display: flex;
     flex-direction: column;
