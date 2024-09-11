@@ -197,11 +197,12 @@ main {
     background-color: transparent;
     padding: 0.5em;
     transition: 0.4s all ease;
+    border: 2px solid var(--green-030);
+    border-radius: 0.7em;
 }
 
 .search-help button:hover {
     background-color: var(--green-030);
-    border-radius: 0.7em;
 }
 
 .search-help #search {
@@ -321,7 +322,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em; 
+    padding: 1em; 
     text-align: center;
 }
 
