@@ -42,12 +42,15 @@ main {
 
 .search-artigo button {
     background-color: transparent;
-    padding: 0.8em;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 2px solid var(--green);
     transition: 0.4s all ease;
 }
 
 .search-artigo button:hover {
-    background-color: var(--green-030);
+    background-color: var(--green);
+    color: white;
     border-radius: 1em;
 }
 
