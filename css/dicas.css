@@ -149,16 +149,9 @@ main {
 }
 
 .modal button {
-    background-color:  var(--green-020);
-    border: 1px solid var(--green-020);
+    opacity: 1;
+    background-color: red;
     transition: 0.4s all ease;
-}
-
-.modal button:hover {
-    background-color: transparent;
-    border: 1px solid var(--green-020);
-    color: var(--black);
-    box-shadow: none;
 }
 
 .number-modal {

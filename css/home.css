@@ -28,6 +28,12 @@ button {
     border: none;
 }
 
+.btn-close {
+    opacity: 1;
+    background-color: red;
+    transition: 0.4s all ease;
+}
+
 .a-btn {
     color: var(--black);
     background-color: var(--blue);
@@ -219,6 +225,7 @@ main {
 
 .search-help button:hover {
     background-color: var(--green);
+    border-radius: 1em;
     color: var(--white);
 }
 
@@ -434,7 +441,7 @@ main {
     transition: 0.4s all ease;
 }
 
-.termos button:hover {
+.termos-servico:hover {
     background-color: transparent;
     box-shadow: none;
     border: 1px solid var(--green-020);
