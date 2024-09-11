@@ -59,7 +59,7 @@ botao.addEventListener('click', function logar(){
         alerta.classList.add('alert', 'alert-danger', 'alert-dismissible', 'fade', 'show');
         alerta.setAttribute('role', 'alert');
         alerta.innerHTML = `
-        <strong>Erro!</strong> Usuário ou senha inválidos (tente novamente). 
+        <strong>Erro!</strong> Email ou senha inválidos (tente novamente). 
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         `;
         let reference = document.querySelector('#title')

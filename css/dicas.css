@@ -62,6 +62,53 @@ main {
     padding: 0 1em;
 }
 
+
+.search-dica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30em;
+}
+
+@media(max-width:730px) {
+    .search-dica {
+        min-width: 20em;
+    }
+}
+
+.search-dica button {
+    background-color: transparent;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 2px solid var(--green);
+    transition: 0.4s all ease;
+}
+
+.search-dica button:hover {
+    background-color: var(--green);
+    color: white;
+    border-radius: 1em;
+}
+
+.search-dica #search {
+    border: none;
+    border-bottom: 3px solid var(--green);
+    margin-left: 1em;
+    width: 50%;
+    font-size: 16px;
+    min-width: 90%;
+}
+
+.search-dica #search:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--black);
+}
+
+.search-dica #search::placeholder {
+    color: var(--grey);
+}
+
 .container-dicas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
