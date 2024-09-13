@@ -76,39 +76,6 @@ main {
     }
 }
 
-.search-dica button {
-    background-color: transparent;
-    padding: 0.4em 0.6em;
-    border-radius: 0.7em;
-    border: 2px solid var(--green);
-    transition: 0.4s all ease;
-}
-
-.search-dica button:hover {
-    background-color: var(--green);
-    color: white;
-    border-radius: 1em;
-}
-
-.search-dica #search {
-    border: none;
-    border-bottom: 3px solid var(--green);
-    margin-left: 1em;
-    width: 50%;
-    font-size: 16px;
-    min-width: 90%;
-}
-
-.search-dica #search:focus {
-    border: none;
-    outline: none;
-    border-bottom: 3px solid var(--black);
-}
-
-.search-dica #search::placeholder {
-    color: var(--grey);
-}
-
 .container-dicas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -127,15 +94,15 @@ main {
 }
 
 .dicas-content-1 {
-    border: 3px solid var(--green-010);
+    background-color: var(--green-010);
 }
 
 .dicas-content-2 {
-    border: 3px solid var(--green);
+    background-color: var(--green-020);
 }
 
 .dicas-content-3 {
-    border: 3px solid var(--green-020);
+   background-color: var(--green-030);
 }
 
 @media (max-width: 1200px) {
