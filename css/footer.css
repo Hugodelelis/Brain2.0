@@ -27,7 +27,6 @@ body {
 footer {
     background-color: var(--grey-30);
     background-position: fixed;
-    position: absolute;
 }
 
 #one-item-footer {
@@ -97,7 +96,6 @@ footer {
 
 .footer-details{
     display: inline-block;
-
 }
 
 .footer-details summary{
