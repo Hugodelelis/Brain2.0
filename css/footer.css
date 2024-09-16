@@ -30,13 +30,14 @@ footer {
 }
 
 #one-item-footer {
-    text-align: justify;
+    text-align: left;
     color: var(--black);
     font-size: 1.1em;
 }
 
 #one-item-footer p {
     margin: 1rem;
+    font-size: 14px;
 }
 
 .footer-img {
@@ -47,6 +48,7 @@ footer {
 .footer-a h1 {
     align-items: center;
     font-weight: 800;
+    font-size: 24px;
     color: var(--green-010);
 }
 
@@ -62,9 +64,9 @@ footer {
     transition: ease-in 200ms;
 }
 
-.footer-h3{
+.footer-h3 {
     color:  var(--black);
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 700;
     margin: 24px 0;
 }
@@ -75,8 +77,8 @@ footer {
     }
 }
 
-.footer-ul-style li > a{
-    font-size: 1.1em;
+.footer-ul-style li > a {
+    font-size: 16px;
     text-decoration: none;
     color: var(--green-010);
     font-weight: 700;
@@ -111,6 +113,7 @@ footer {
     background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
     background-size: cover;
     margin-left: .75em;
+    margin-bottom: 0.3em;
     transition: transform 0.2s ease-in-out; 
 }
 
@@ -127,22 +130,22 @@ footer {
     border-radius: 5px;
 }
 
-.footer-details h3{
+.footer-details h3 {
     font-size: 1.4em;
     color: var(--black);
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 700;
 }
 .footer-details li{
     list-style: none;
 
 }
-.column-grid{
+.column-grid { 
     display: flex;
     flex-wrap: wrap;
 }
 
-.col-grid{  
+.col-grid {  
     flex: 1 1 100px;
     margin: 10px;
 
@@ -170,6 +173,7 @@ footer {
 .social-icons-footer a {
     color: var(--green-010);
     margin: 0.5em;
+    font-size: 12px;
     border-radius: 20%;
     display: inline-flex;
     justify-content: center;
