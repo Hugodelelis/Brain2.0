@@ -77,6 +77,25 @@ main {
     position: relative;
 }
 
+
+@media (max-width: 1200px) {
+    .slider-container {
+        height: 32em;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-container {
+        height: 34em;
+    }
+}
+
+@media (max-width: 730px) {
+    .slider-container {
+        height: 36em;
+    }
+}
+
 .slides {
     display: flex;
     transition: transform 1s ease-in-out;
@@ -181,6 +200,10 @@ main {
     .slide img {
         display: none;
     }
+
+    .buttons {
+        top: 32em;
+    }
 }
 
 @media (max-width: 992px) {
@@ -189,7 +212,7 @@ main {
     }
 
     .buttons {
-        top: 35em;
+        top: 33em;
     }
 }
 
@@ -258,16 +281,16 @@ main {
     .search-help {
         width: 60%;
         left: 0em;
-        top: 25em
+        top: 22em
     }
 }
 
 @media (max-width: 992px) {
     .search-help {
         width: 60%;
-        margin: 0.6em 1.6em;
         left: 0em;
-        top: 24em;
+        top: 22em;
+        margin-left: 28px;
     }
 }
 

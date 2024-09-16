@@ -71,6 +71,7 @@ footer {
     margin: 24px 0;
 }
 
+
 @media(max-width:992px) {
     .footer-h3{
         margin-left: 0.4em;
@@ -96,7 +97,7 @@ footer {
     transition: ease-in 220ms;
 }
 
-.footer-details{
+.footer-details {
     display: inline-block;
 }
 
