@@ -141,6 +141,11 @@ main {
     color: red;
 }
 
+.like-count {
+    padding-left: 0.4em;
+}
+
+
 .assets-artigo button {
     background-color: transparent;
     border: none;

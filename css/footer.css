@@ -27,6 +27,7 @@ body {
 footer {
     background-color: var(--grey-30);
     background-position: fixed;
+    margin-top: 3em;
 }
 
 #one-item-footer {
@@ -149,7 +150,6 @@ footer {
 .col-grid {  
     flex: 1 1 100px;
     margin: 10px;
-
 }
 
 .col-grid li{
@@ -194,3 +194,13 @@ footer {
     opacity: 0.8;
 }
 
+#tree-item-footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 1400px) {
+    #tree-item-footer {
+        justify-content: left;
+    }
+}
