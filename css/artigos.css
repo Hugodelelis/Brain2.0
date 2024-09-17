@@ -89,7 +89,7 @@ main {
 .search-artigo #search:focus {
     border: none;
     outline: none;
-    border-bottom: 3px solid var(--black);
+    border-bottom: 3px solid var(--grey);
 }
 
 .search-artigo #search::placeholder {

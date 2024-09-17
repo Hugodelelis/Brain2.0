@@ -263,7 +263,7 @@ main {
 .search-help #search:focus {
     border: none;
     outline: none;
-    border-bottom: 3px solid var(--black);
+    border-bottom: 3px solid var(--grey);
 }
 
 .search-help #search::placeholder {
