@@ -32,6 +32,10 @@ footer {
     display: flex;
 }
 
+.sobre {
+    padding: 0 0.5em;
+}
+
 .footer-ul-style {
     text-align: center;
     padding: 0;
