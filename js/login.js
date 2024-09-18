@@ -14,8 +14,6 @@ function exibirAlerta(tipo, mensagem) {
     let referencia = document.querySelector('#title');
     if (referencia) {
         referencia.insertAdjacentElement('afterend', alerta);
-    } else {
-        console.warn('Elemento com ID #title não encontrado.');
     }
 
     setTimeout(() => {
