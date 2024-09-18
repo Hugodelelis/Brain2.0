@@ -40,10 +40,6 @@ function inicializarUsuarios() {
     usuarios = [...usuariosPreDefinidos, usuarios];
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    inicializarUsuarios();
-});
-
 let botao = document.getElementById('btnlogin');
 
 if (botao) {
