@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
         });
 
         document.querySelector('#leave').addEventListener('click', function() {
-            sessionStorage.setItem('usuarioLogado', 'desconectado');
+            sessionStorage.setItem('usuarioLogado', '');
 
             document.querySelectorAll('#user').forEach(function(element) {
                 element.innerHTML = '';
