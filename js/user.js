@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
-    let usuarioLogado = this.sessionStorage.getItem('usuarioLogado');
-    let sair = this.sessionStorage.getItem('sair')
+    let usuarioLogado = sessionStorage.getItem('usuarioLogado');
+    let sair = sessionStorage.getItem('sair');
 
     if (usuarioLogado) {
         document.querySelectorAll('#user').forEach(function(element) {
@@ -12,9 +12,16 @@ window.addEventListener('load', () => {
         });
 
         document.querySelector('#leave').addEventListener('click', function() {
+            sessionStorage.setItem('usuarioLogado', 'desconectado');
 
-            sessionStorage.clear();
-            
+            document.querySelectorAll('#user').forEach(function(element) {
+                element.innerHTML = '';
+            });
+
+            document.querySelectorAll('#login-drop').forEach(function(element) {
+                element.innerHTML = '';
+            });
+
             window.location.href = 'login.html'; 
         });
     }

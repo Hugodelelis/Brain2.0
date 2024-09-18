@@ -25,6 +25,27 @@ function exibirAlerta(tipo, mensagem) {
     }, 5000);
 }
 
+function inicializarUsuarios() {
+    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+    const usuariosPreDefinidos = [
+        { email: 'lucas@gmail.com', user: 'Lucas', pass: '123' },
+        { email: 'hugo@gmail.com', user: 'Hugo', pass: '123' },
+        { email: 'thalles@gmail.com', user: 'Thalles', pass: '123' },
+        { email: 'marcos@gmail.com', user: 'Marcos', pass: '123' },
+        { email: 'caio@gmail.com', user: 'Caio', pass: '123' },
+        { email: 'mylena@gmail.com', user: 'Mylena', pass: '123' }
+    ];
+
+    if (usuarios.length === 0) {
+        localStorage.setItem('usuarios', JSON.stringify(usuariosPreDefinidos));
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    inicializarUsuarios();
+});
+
 let botaoLogin = document.getElementById('btnlogin');
 
 if (botaoLogin) {
