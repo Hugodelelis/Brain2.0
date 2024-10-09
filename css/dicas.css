@@ -82,8 +82,8 @@ main {
 }
 
 .dicas-content {
-    padding: 1em 2em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1em 2em;
 }
 
 .dicas-content-1 {
