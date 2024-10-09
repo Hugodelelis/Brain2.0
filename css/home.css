@@ -396,7 +396,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 .container-artigos h3 {
