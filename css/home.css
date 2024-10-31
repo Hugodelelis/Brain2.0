@@ -502,8 +502,12 @@ main {
 }
 
 @media (max-width:996px) {
+    .voluntary {
+        margin: 2em 0;
+    }
+
     .voluntary-container  {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
