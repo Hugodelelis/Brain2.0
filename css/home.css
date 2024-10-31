@@ -520,4 +520,8 @@ main {
         justify-content: center;
         align-items: center;
     }
+
+    .voluntary-container img {
+        width: 16em;
+    }
 }
