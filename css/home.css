@@ -510,6 +510,7 @@ main {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        gap: 1.5em;
     }
 
     .vonluntary-content {
