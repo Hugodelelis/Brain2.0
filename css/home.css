@@ -525,3 +525,34 @@ main {
         width: 16em;
     }
 }
+
+.feedbacks {
+    min-height: 20em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 1em 4em;
+}
+
+.feedbacks .swiper {
+    width: 100%;
+    padding-top: 1em;
+}
+
+.feedbacks .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.feedbacks .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+

@@ -18,7 +18,8 @@
     <script src="js/contador.js" defer></script>
     <script src="js/curtida.js" defer></script>
     <script src="js/user.js" defer></script>
-    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <title>Brain</title>
 </head>
@@ -153,6 +154,32 @@
                 </div>
             </div>
         </section>
+
+        <section class="feedbacks">
+            <h2>Feedbacks</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>Teste</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Teste</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Teste</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Teste</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Teste</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Teste</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
         
 
         <section class="artigos-top">
@@ -191,11 +218,9 @@
         </section>
 
         <section class="views">
-
             <h2>Obrigado por nos escolher <span id="user"></span>!</h2>
             <h3 id="access-counter">0</h3>
             <h4>Acessos</h4>
-
         </section>
 
         <section class="termos" id="termos">
@@ -297,5 +322,25 @@
                 </div>
             </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 </html>
