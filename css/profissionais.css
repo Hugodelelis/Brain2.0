@@ -30,7 +30,10 @@ button {
 
 main {
     padding-top: 7em;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .a-btn {
@@ -47,4 +50,117 @@ main {
     background-color: transparent;
     color: var(--blue);
     transform: scale(1.05);
+}
+
+.search-prof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30em;
+    gap: 1em;
+}
+
+.search-prof button {
+    background-color: transparent;
+    padding: 0.4em 0.6em;
+    border-radius: 0.7em;
+    border: 2px solid var(--green);
+    transition: 0.4s all ease;
+}
+
+.search-prof button:hover {
+    background-color: var(--green);
+    color: white;
+    border-radius: 1em;
+}
+
+@media(max-width:730px) {
+    .search-prof{
+        min-width: 20em;
+    }
+}
+
+.search-prof #search {
+    border: none;
+    border-bottom: 3px solid var(--green);
+    width: 50%;
+    font-size: 16px;
+    min-width: 90%;
+}
+
+.search-prof #search:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--grey);
+}
+
+.search-prof #search::placeholder {
+    color: var(--grey);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.city {
+    color: var(--green);
+}
+
+.professionals {
+    padding: 2em 0 1em;
+    gap: 1.5em;
+    min-height: 60vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.professionals-container {
+    padding: 1em 2em;
+    width: 100%;
+    border-radius: 0.8em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    position: relative;
+}
+
+.professionals-container button {
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+}
+
+.professionals-container img {
+    max-width: 10em;
+    max-height: 10em;
+}
+
+.professionals-descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 996px) {
+    .professionals-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .professionals-container button {
+        position: inherit;
+    }
 }
