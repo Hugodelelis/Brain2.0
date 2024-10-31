@@ -1,0 +1,50 @@
+:root {
+    --blue: #205072;
+    --blue-010: #002c53;
+
+    --green: #32909C;
+    --green-010: #56C595;
+    --green-020: #7BE495;
+    --green-030: #CFF3D2;
+
+    --grey: #b1b1b1;
+
+    --black: rgb(55 65 81);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+button {
+    border: none;
+}
+
+main {
+    padding-top: 7em;
+    min-height: 100vh;
+}
+
+.a-btn {
+    color: var(--black);
+    background-color: var(--blue);
+    transition: 0.4s all ease;
+    padding: 0.5em;
+    border: 2px solid var(--blue);
+    color: var(--white);
+    border-radius: 0.6em;
+}
+
+.a-btn:hover {
+    background-color: transparent;
+    color: var(--blue);
+    transform: scale(1.05);
+}
