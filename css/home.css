@@ -547,7 +547,7 @@ main {
     background-size: cover;
     width: 300px;
     height: 300px;
-    background-color: var(--blue);
+    background-color: #c8d5da;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
