@@ -58,6 +58,7 @@ main {
     justify-content: center;
     min-width: 30em;
     gap: 1em;
+    padding: 0 4em;
 }
 
 .search-prof button {
@@ -104,6 +105,8 @@ main {
     gap: 1.5em;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0 1em;
 }
 
 .city {
