@@ -1,6 +1,11 @@
 window.addEventListener('load', () => {
     let usuarioLogado = sessionStorage.getItem('usuarioLogado');
     let sair = sessionStorage.getItem('sair');
+    let btnVoluntary = document.getElementById('voluntary')
+
+    if(!usuarioLogado) {
+        btnVoluntary.disabled = true
+    }
 
     if (usuarioLogado) {
         document.querySelectorAll('#user').forEach(function(element) {
