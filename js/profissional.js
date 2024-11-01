@@ -35,6 +35,10 @@ async function search() {
 async function showCity() {
     const city = await search()
 
+    if(city == undefined) {
+        return write.innerHTML = ''
+    }
+
     document.querySelector('.city').innerHTML = `${city}`
 }
 
@@ -43,6 +47,14 @@ async function showProfessionals() {
     const professionals = profissionaisPorCidade[`${city}`]
     const write = document.querySelector('.professionals')
     write.innerHTML = ''
+
+    if(city == undefined) {
+        return write.innerHTML = '<span class="error">Aviso: CEP inválido!</span>'
+    }
+
+    if(!(city in profissionaisPorCidade)) {
+        return write.innerHTML = '<span class="error">Aviso: Não possuimos profissionais cadastrados nessa área!</span>'
+    }
 
     professionals.map(prof => {
         write.innerHTML += `
@@ -69,4 +81,8 @@ async function loading () {
 
 document.querySelector('#search-btn').addEventListener('click', () => {
     loading()
+})
+
+document.querySelector('#search').addEventListener('keydown', (e) => {
+    if(e.key === 'Enter') loading()
 })

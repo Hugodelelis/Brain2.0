@@ -179,7 +179,11 @@ input:-webkit-autofill {
     }
 }
 
-.alert {
+.alert, .error{
     font-size: 1.6em;
     color: var(--green);
+}
+
+.error {
+    color: red;
 }
