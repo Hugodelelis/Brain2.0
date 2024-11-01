@@ -10,25 +10,17 @@ const profissionaisPorCidade = {
             nome: "Carlos",
             profissao: "Psicólogo",
             horario: "08h às 18h",
-            imagem: "assets/imgs/profissionais/p4.svg"
+            imagem: "assets/imgs/profissionais/p2.png"
         }
     ],
-    "Rio de Janeiro": [
+    "Barra Mansa": [
         {
             nome: "Fernanda",
             profissao: "Psicóloga",
             horario: "09h às 17h",
-            imagem: "assets/imgs/profissionais/p5.svg"
+            imagem: "assets/imgs/profissionais/p1.png"
         }
     ],
-    "São Paulo": [
-        {
-            nome: "Marcos",
-            profissao: "Psicoterapeuta",
-            horario: "10h às 16h",
-            imagem: "assets/imgs/profissionais/p6.svg"
-        }
-    ]
 };
 
 
@@ -48,7 +40,24 @@ async function showCity() {
 
 async function showProfessionals() {
     const city = await search()
-    console.log(profissionaisPorCidade[`${city}`])
+    const professionals = profissionaisPorCidade[`${city}`]
+    const write = document.querySelector('.professionals')
+
+    professionals.map(prof => {
+        write.innerHTML += `
+            <div class="professionals-container">
+                <img src="${prof.imagem}" alt="${prof.nome}">
+                <div class="professional-content">
+                <h2>${prof.nome}</h2>
+                <p>Cidade: <span>${city}</span></p>
+                <p>Atuação: <span>${prof.profissao}</span></p>
+                <p>Horário: <span>${prof.horario}</span></p>
+
+                <button class="a-btn">Ver Detalhes</button>
+            </div>
+            </div>
+        `
+    });
 }
 
 async function loading () {
@@ -60,12 +69,3 @@ async function loading () {
 document.querySelector('#search-btn').addEventListener('click', () => {
     loading()
 })
-
-
-document.querySelector('#search').addEventListener('input', function (e) {
-    let value = e.target.value.replace(/\D/g, '');
-    if (value.length > 5) {
-        value = value.replace(/^(\d{5})(\d{1,3})/, '$1-$2'); 
-    }
-    e.target.value = value;
-});
