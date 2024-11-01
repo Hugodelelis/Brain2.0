@@ -99,10 +99,15 @@ main {
     color: var(--grey);
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
 .controls {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1em;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -111,6 +116,8 @@ main {
 
 .city {
     color: var(--green);
+    font-size: 1.6em;
+    height: 1em;
 }
 
 .professionals {

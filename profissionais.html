@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/profissionais.css">
     
+    <script src="js/profissional.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 
     <title>Brain - Profissionais</title>
@@ -49,9 +50,10 @@
 
     <main>
         <div class="controls">
-            <h1>Profissionais em: <span class="city">Volta Redonda</span></h1>
+            <h1>Profissionais em:</h1>
+            <span class="city"></span>
             <div class="search-prof">
-                <button><i class="bi bi-search"></i></button> 
+                <button id="search-btn"><i class="bi bi-search"></i></button> 
                 <input type="text" id="search" placeholder="Digite seu CEP..." aria-label="seu CEP">
                 <button>Filtro</button>
             </div>
@@ -94,7 +96,6 @@
                 </div>
             </div>
 
-        
         </div>
     </main>
 
