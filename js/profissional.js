@@ -42,6 +42,7 @@ async function showProfessionals() {
     const city = await search()
     const professionals = profissionaisPorCidade[`${city}`]
     const write = document.querySelector('.professionals')
+    write.innerHTML = ''
 
     professionals.map(prof => {
         write.innerHTML += `
