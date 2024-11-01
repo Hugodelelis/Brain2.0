@@ -175,3 +175,8 @@ input:-webkit-autofill {
         position: inherit;
     }
 }
+
+.alert {
+    font-size: 1.6em;
+    color: var(--green);
+}
