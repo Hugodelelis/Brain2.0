@@ -46,7 +46,7 @@ async function showProfessionals() {
 
     professionals.map(prof => {
         write.innerHTML += `
-            <div class="professionals-container">
+            <div class="professionals-container animate__animated animate__fadeInRight">
                 <img src="${prof.imagem}" alt="${prof.nome}">
                 <div class="professional-content">
                 <h2>${prof.nome}</h2>
