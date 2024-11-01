@@ -186,4 +186,5 @@ input:-webkit-autofill {
 
 .error {
     color: red;
+    text-align: center;
 }

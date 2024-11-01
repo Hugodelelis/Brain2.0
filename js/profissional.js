@@ -26,18 +26,21 @@ const profissionaisPorCidade = {
 
 async function search() {
     const cep = document.querySelector('#search').value
-    const resp = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
-    const data = await resp.json()
+    const write = document.querySelector('.professionals')
 
-    return data.localidade
+    if(cep.length === 9) {
+        const resp = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        const data = await resp.json()
+        console.log('aquiiiiiiii')
+        return data.localidade
+    } 
 }
 
 async function showCity() {
     const city = await search()
-
-    if(city == undefined) {
-        return write.innerHTML = ''
-    }
+    if(city === undefined) {
+        return document.querySelector('.city').innerHTML = ''
+    } 
 
     document.querySelector('.city').innerHTML = `${city}`
 }
