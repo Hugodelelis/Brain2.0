@@ -181,10 +181,10 @@ input:-webkit-autofill {
 
 .alert, .error{
     font-size: 1.6em;
+    text-align: center;
     color: var(--green);
 }
 
 .error {
     color: red;
-    text-align: center;
 }
