@@ -28,6 +28,11 @@ button {
     border: none;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
 .btn-close {
     opacity: 1;
     background-color: red;
