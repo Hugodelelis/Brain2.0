@@ -103,6 +103,4 @@ window.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#search').value = cep;
         loading()
     }
-
-    localStorage.clear()
 });
