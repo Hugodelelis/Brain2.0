@@ -78,6 +78,7 @@ async function showProfessionals() {
 function checkPage() {
     if (window.location.href.includes('index.html')) {
         window.location.href = './profissionais.html'
+        console.log('to aqui')
     } 
 }
 
