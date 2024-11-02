@@ -26,12 +26,11 @@ const profissionaisPorCidade = {
 
 async function search() {
     const cep = document.querySelector('#search').value
-    const write = document.querySelector('.professionals')
+    localStorage.setItem('cep', cep)
 
     if(cep.length === 9) {
         const resp = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
         const data = await resp.json()
-        console.log('aquiiiiiiii')
         return data.localidade
     } 
 }
@@ -76,8 +75,15 @@ async function showProfessionals() {
     });
 }
 
+function checkPage() {
+    if (window.location.href.includes('index.html')) {
+        window.location.href = 'profissionais.html'
+    } 
+}
+
 async function loading () {
     await search()
+    checkPage()
     showCity()
     showProfessionals()
 }
@@ -89,3 +95,14 @@ document.querySelector('#search-btn').addEventListener('click', () => {
 document.querySelector('#search').addEventListener('keydown', (e) => {
     if(e.key === 'Enter') loading()
 })
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const cep = localStorage.getItem('cep');
+    if (cep && window.location.href.includes('profissionais.html')) {
+        document.querySelector('#search').value = cep;
+        loading()
+    }
+
+    localStorage.clear()
+});
