@@ -77,7 +77,7 @@ async function showProfessionals() {
 
 function checkPage() {
     if (window.location.href.includes('index.html')) {
-        window.location.href = 'profissionais.html'
+        window.location.href = './profissionais.html'
     } 
 }
 
@@ -99,7 +99,7 @@ document.querySelector('#search').addEventListener('keydown', (e) => {
 
 window.addEventListener('DOMContentLoaded', () => {
     const cep = localStorage.getItem('cep');
-    if (cep && window.location.href.includes('profissionais.html')) {
+    if(cep && window.location.href.includes('profissionais.html')) {
         document.querySelector('#search').value = cep;
         loading()
     }
