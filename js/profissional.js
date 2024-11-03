@@ -80,26 +80,22 @@ async function showProfessionals() {
     });
 }
 
-function checkPage() {
-    const url = window.location.pathname;
-    if (url === './' || url === '/index.html') {
-        window.location.href = './profissionais.html';
-    }
-}
-
 async function loading () {
     await search()
-    checkPage()
     showCity()
     showProfessionals()
 }
 
 document.querySelector('#search-btn').addEventListener('click', () => {
     loading()
+    console.log(window.location.pathname)
+
+    if(window.location.pathname !== '/profissionais.html') window.location.href = 'profissionais.html';
 })
 
 document.querySelector('#search').addEventListener('keydown', (e) => {
     if(e.key === 'Enter') loading()
+    if(window.location.pathname !== '/profissionais.html') window.location.href = 'profissionais.html';
 })
 
 
