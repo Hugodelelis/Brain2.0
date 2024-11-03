@@ -54,14 +54,22 @@ main {
     align-items: center;
     justify-content: center;
     min-width: 30em;
+    gap: 0.2em;
+    padding: 0.2em 3em;
+    border: 1px solid var(--blue);
+    border-radius: 0.8em;
 }
 
 .search-artigo button {
     background-color: transparent;
     padding: 0.4em 0.6em;
     border-radius: 0.7em;
-    border: 2px solid var(--green);
     transition: 0.4s all ease;
+}
+
+.search-artigo button:nth-child(3) {
+    background-color: var(--green);
+    color: var(--white);
 }
 
 .search-artigo button:hover {
@@ -71,24 +79,22 @@ main {
 }
 
 @media(max-width:730px) {
-    .search-artigo {
+    .search-artigo{
         min-width: 20em;
     }
 }
 
 .search-artigo #search {
     border: none;
-    border-bottom: 3px solid var(--green);
-    margin-left: 1em;
     width: 50%;
     font-size: 16px;
     min-width: 90%;
+    height: 100%;
 }
 
 .search-artigo #search:focus {
     border: none;
     outline: none;
-    border-bottom: 3px solid var(--grey);
 }
 
 .search-artigo #search::placeholder {
@@ -99,6 +105,7 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
     -webkit-text-fill-color: inherit !important;
 }
+
 
 .artigos {
     display: flex;

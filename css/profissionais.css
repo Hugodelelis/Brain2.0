@@ -60,16 +60,22 @@ main {
     align-items: center;
     justify-content: center;
     min-width: 30em;
-    gap: 1em;
-    padding: 0.2em 4em;
+    gap: 0.2em;
+    padding: 0.2em 3em;
+    border: 1px solid var(--blue);
+    border-radius: 0.8em;
 }
 
 .search-prof button {
     background-color: transparent;
     padding: 0.4em 0.6em;
     border-radius: 0.7em;
-    border: 2px solid var(--green);
     transition: 0.4s all ease;
+}
+
+.search-prof button:nth-child(3) {
+    background-color: var(--green);
+    color: var(--white);
 }
 
 .search-prof button:hover {
@@ -86,16 +92,15 @@ main {
 
 .search-prof #search {
     border: none;
-    border-bottom: 3px solid var(--green);
     width: 50%;
     font-size: 16px;
     min-width: 90%;
+    height: 100%;
 }
 
 .search-prof #search:focus {
     border: none;
     outline: none;
-    border-bottom: 3px solid var(--grey);
 }
 
 .search-prof #search::placeholder {
@@ -124,7 +129,6 @@ input:-webkit-autofill {
 .city {
     color: var(--green);
     font-size: 1.6em;
-    height: 1em;
 }
 
 .professionals {
