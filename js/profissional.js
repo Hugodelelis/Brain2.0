@@ -97,6 +97,8 @@ document.querySelector('#search').addEventListener('keydown', (e) => {
     if(e.key === 'Enter') {
         loading()
     }
+
+    if(window.location.pathname !== '/profissionais.html' && e.key === 'enter') window.location.href = 'profissionais.html';
 })
 
 window.addEventListener('DOMContentLoaded', () => {
