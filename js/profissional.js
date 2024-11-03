@@ -82,7 +82,7 @@ async function showProfessionals() {
 
 function checkPage() {
     const url = window.location.pathname;
-    if (url === '/' || url === '/index.html') {
+    if (url === './' || url === '/index.html') {
         window.location.href = './profissionais.html';
     }
 }
