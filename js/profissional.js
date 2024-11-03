@@ -81,7 +81,7 @@ async function showProfessionals() {
 }
 
 function checkPage() {
-    if (window.location.href.includes('index.html') || window.location.href.includes('./')) {
+    if (window.location.href.includes('index.html') || window.location.href.includes('/')) {
         window.location.href = './profissionais.html'
     } 
 }
