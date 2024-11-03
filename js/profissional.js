@@ -94,10 +94,11 @@ document.querySelector('#search-btn').addEventListener('click', () => {
 })
 
 document.querySelector('#search').addEventListener('keydown', (e) => {
-    if(e.key === 'Enter') loading()
-    if(window.location.pathname !== '/profissionais.html') window.location.href = 'profissionais.html';
+    if(e.key === 'Enter') {
+        loading()
+        if(window.location.pathname !== '/profissionais.html') window.location.href = 'profissionais.html';
+    }
 })
-
 
 window.addEventListener('DOMContentLoaded', () => {
     const cep = localStorage.getItem('cep');
