@@ -94,11 +94,13 @@ document.querySelector('#search-btn').addEventListener('click', () => {
 })
 
 document.querySelector('#search').addEventListener('keydown', (e) => {
+    if(window.location.pathname !== '/profissionais.html' && e.key === 'Enter'){
+        window.location.href = 'profissionais.html';
+    } 
+
     if(e.key === 'Enter') {
         loading()
     }
-
-    if(window.location.pathname !== '/profissionais.html' && e.key === 'enter') window.location.href = 'profissionais.html';
 })
 
 window.addEventListener('DOMContentLoaded', () => {
