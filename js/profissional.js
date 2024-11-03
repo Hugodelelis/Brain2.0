@@ -82,7 +82,7 @@ async function showProfessionals() {
 
 function checkPage() {
     const url = window.location.pathname;
-    if (url === 'https://hugodelelis.github.io/Brain2.0/' || url === '/index.html') {
+    if (url === '/' || url === '/index.html') {
         window.location.href = './profissionais.html';
     }
 }
