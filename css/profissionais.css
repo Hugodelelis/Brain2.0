@@ -64,6 +64,7 @@ main {
     padding: 0.2em 3em;
     border: 1px solid var(--blue);
     border-radius: 0.8em;
+    margin-top: 1em
 }
 
 .search-prof button {
@@ -117,22 +118,22 @@ input:-webkit-autofill {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
     text-align: center;
     padding: 0 1em;
 }
 
-.controls h1 {
+.controls h2 {
     margin: 0;
 }
 
 .city {
     color: var(--green);
     font-size: 1.6em;
+    height: 1em;
 }
 
 .professionals {
-    padding: 2em 0 4em;
+    padding: 1em 0 4em;
     gap: 1.5em;
     min-height: 60vh;
     width: 80%;
@@ -188,7 +189,7 @@ input:-webkit-autofill {
 }
 
 .alert, .error{
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: center;
     color: var(--green);
 }

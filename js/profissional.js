@@ -26,7 +26,7 @@ const profissionaisPorCidade = {
 
 async function search() {
     const cep = document.querySelector('#search').value
-    localStorage.setItem('cep', cep)
+    sessionStorage.setItem('cep', cep)
 
     if(cep.length === 9) {
         const resp = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
@@ -65,7 +65,7 @@ async function showProfessionals() {
 
     professionals.map(prof => {
         write.innerHTML += `
-            <div class="professionals-container animate__animated animate__fadeInRight">
+            <div class="professionals-container animate__animated animate__bounceIn">
                 <img src="${prof.imagem}" alt="${prof.nome}">
                 <div class="professional-content">
                 <h2>${prof.nome}</h2>
@@ -104,7 +104,7 @@ document.querySelector('#search').addEventListener('keydown', (e) => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    const cep = localStorage.getItem('cep');
+    const cep = sessionStorage.getItem('cep');
     if(cep && window.location.href.includes('profissionais.html')) {
         document.querySelector('#search').value = cep;
         loading()
