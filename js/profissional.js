@@ -109,4 +109,8 @@ window.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#search').value = cep;
         loading()
     }
+
+    const write = document.querySelector('.professionals')
+    write.innerHTML = ''
+    write.innerHTML = '<span class="alert">Aviso: Digite um CEP para mostrar os profissionais!</span>'
 });
