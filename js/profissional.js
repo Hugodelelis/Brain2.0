@@ -51,10 +51,6 @@ async function showProfessionals() {
     const cep = document.querySelector('#search').value
     write.innerHTML = ''
 
-    if(cep.length <= 0) {
-        return write.innerHTML = '<span class="error">Aviso: Preencha o campo!</span>'
-    }
-
     if(city == undefined) {
         return write.innerHTML = '<span class="error">Aviso: CEP inválido!</span>'
     }
