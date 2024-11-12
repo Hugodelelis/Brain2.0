@@ -127,3 +127,70 @@ main {
 .modal-footer {
     justify-content: flex-start;
 }
+
+.search-dicas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30em;
+    gap: 0.2em;
+    padding: 0.2em 3em;
+    border: 1px solid var(--blue);
+    border-radius: 0.8em;
+}
+
+.search-dicas button {
+    background-color: transparent;
+    padding: 0.4em 0.6em;
+    border-radius: 0.7em;
+    transition: 0.4s all ease;
+}
+
+.search-dicas button:nth-child(3) {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.search-dicas button:hover {
+    background-color: var(--green);
+    color: white;
+    border-radius: 1em;
+}
+
+@media(max-width:730px) {
+    .search-dicas{
+        min-width: 20em;
+    }
+}
+
+.search-dicas #search {
+    border: none;
+    width: 50%;
+    font-size: 16px;
+    min-width: 90%;
+    height: 100%;
+}
+
+.search-dicas #search:focus {
+    border: none;
+    outline: none;
+}
+
+.search-dicas #search::placeholder {
+    color: var(--grey);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    font-size: 1.2em;
+    text-align: center;
+    color: red;
+}

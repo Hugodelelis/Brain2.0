@@ -16,6 +16,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <script src="js/user.js" defer></script>
+    <script src="js/searchDicas.js" defer></script>
 
     <title>Brain - Dicas</title>
 </head>
@@ -53,8 +54,15 @@
 
         <div class="dicas">
             <h2>Dicas</h2>
+
+            <div class="search-dicas"> 
+                <input type="text" id="search" placeholder="Pesquisar..." aria-label="seu CEP">
+                <button id="search-btn"><i class="bi bi-search"></i></button>
+                <button>Filtro</button>
+            </div>
             
             <div class="container-dicas">
+                <span id="error-message" class="error hidden">Aviso: Pesquisa não encontrada</span>
                 <div class="dicas-content dicas-content-1">
                     <h3>Apoio a ansiosos</h3>
                         <p>A ansiedade causa preocupação constante e pode dificultar o relaxamento e a concentração. Quem sofre com isso se sente frequentemente sobrecarregado e tenso. Oferecer apoio e paciência é fundamental. Incentivar o tratamento ajuda a melhorar o bem-estar e a controlar a ansiedade.</p>
