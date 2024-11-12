@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <script src="js/curtida.js" defer></script>
     <script src="js/user.js" defer></script>
+    <script src="js/searchArtigo.js" defer></script>
 
     <title>Brain - Artigos</title>
 </head>
@@ -54,13 +55,13 @@
             <h2>Artigos</h2>
 
             <div class="search-artigo"> 
-                <input type="text" id="search" placeholder="Pesquisar..." aria-label="seu CEP" maxlength="9" minlength="9">
+                <input type="text" id="search" placeholder="Pesquisar..." aria-label="seu CEP">
                 <button id="search-btn"><i class="bi bi-search"></i></button>
                 <button>Filtro</button>
             </div>
 
                 <div class="container-artigos">
-
+                    <span id="error-message" class="error hidden">Aviso: Pesquisa não encontrada</span>
                         <div class="artigo-content artigo-content-1">
                             <h3>Depressão</h3>
                             <p>A depressão é um transtorno mental que provoca tristeza profunda e perda de interesse nas atividades diárias. Afeta a autoestima e a energia, causando dificuldades em realizar tarefas cotidianas. Pode resultar em sentimentos de desesperança e cansaço persistente. O tratamento é essencial para a recuperação.</p>
@@ -114,9 +115,7 @@
                                 <button id="curtir"><i class="bi bi-heart-fill"></i><span class="like-count">12</span></button>
                             </div>
                         </div>
-                
                 </div>
-
         </section>
     </main>
 
