@@ -229,6 +229,41 @@ button.btn-close:hover {
     font-size: 13px;
 }
 
+.custom-select-container {
+    position: relative;
+    width: 100%;
+}
+
+.custom-select-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    appearance: none; 
+    cursor: pointer;
+    background-color: #eee;
+    color: #666;
+    font-size: 13px;
+    padding: 0.8em 2.5em;
+    margin: 6px 0;
+    outline: none;
+    border: none;
+}
+
+.custom-select-container::after {
+    content: '▼';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+    font-size: 13px;
+}
+
+.custom-select-container select:focus {
+    outline: none;
+}
+
 @media(max-width: 730px) {
     .custom-file-label {
         padding: 1.3rem 0.7rem;
@@ -241,5 +276,9 @@ button.btn-close:hover {
 
     .container-style input {
         padding: 10px 1.2em;
+    }
+
+    .custom-select-container select {
+        padding: 0.8em 1em;
     }
 }
