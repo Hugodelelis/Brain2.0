@@ -1,8 +1,13 @@
 window.addEventListener('load', () => {
     let usuarioLogado = sessionStorage.getItem('usuarioLogado');
     let sair = sessionStorage.getItem('sair');
+    console.log(usuarioLogado)
+    if(2 > 1) {
+        console.log(usuarioLogado)
+        
+    }
 
-    if (usuarioLogado) {
+    if(usuarioLogado) {
         document.querySelectorAll('#user').forEach(function(element) {
             element.innerHTML = usuarioLogado;
         });
@@ -33,5 +38,7 @@ window.addEventListener('load', () => {
 
             window.location.href = 'login.html'; 
         });
+    } else {
+        document.querySelector('#voluntary').disabled = true
     }
 });

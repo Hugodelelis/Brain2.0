@@ -15,6 +15,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <script src="js/login.js" defer></script>
+    <script src="js/voluntariar.js" defer></script>
     
     <title>Brain - Login</title>
 </head>
@@ -51,20 +52,16 @@
                                 <input type="email" placeholder="Nome profissional" id="login">
 
                                 <div class="custom-select-container">
-                                    <select name="city" id="city">
-                                    <option value="">Selecione</option>
-                                    <option value="sp">São Paulo</option>
-                                    <option value="rj">Rio de Janeiro</option>
-                                    <option value="mg">Minas Gerais</option>
+                                    <select name="state" id="state">
+                                        <option value="" selected>Selecione um estado</option>
                                     </select>
                                 </div>
 
                                 <div class="custom-select-container">
-                                    <select name="city" id="city-2">
-                                    <option value="">Selecione</option>
-                                    <option value="ba">Bahia</option>
-                                    <option value="rs">Rio Grande do Sul</option>
-                                    <option value="pr">Paraná</option>
+                                    <select name="city" id="city">
+                                    <option value="">Selecione uma cidade</option>
+
+                                    
                                     </select>
                                 </div>
 
@@ -111,7 +108,5 @@
             </div>
     </section>
 </main>
-    
-    
 </body>
 </html>
