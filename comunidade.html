@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="src/assets/favicon/favi.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/comunidade.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" defer></script>
+
+    <script src="js/login.js" defer></script>
+    <script src="js/user.js" defer></script>
+    <script src="backend/app/ui.js" type="module" defer></script>
+    <script src="backend/app/main.js" type="module" defer></script>
+    <script src="backend/app/boavindas.js" defer></script>
+
+    <title>Brain</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1><i class="bi bi-slack"></i>Brain</h1></a>
+
+        <div class="container-menu">   
+            <span id="user" class="user-menu"></span>
+            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle"></i>
+            </button>
+            
+            <ul class="dropdown-menu" id="login-drop">
+                <li><a class="dropdown-item" href="login.html">Entrar</a></li>
+            </ul>
+            
+            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-list"></i>
+            </button>
+            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="profissionais.html">Profissionais</a></li>
+                <li><a class="dropdown-item" href="artigos.html">Artigos</a></li>
+                <li><a class="dropdown-item" href="comunidade.html">Comunidade</a></li>
+                <li><a class="dropdown-item" href="biblioteca.html">Biblioteca</a></li>
+                <li><a class="dropdown-item" href="dicas.html">Dicas</a></li>
+            </ul>
+        </div>
+    </header> 
+        <main>
+            <section class="profile-container container_fluid">
+            <div class="profile-text-container">
+                <div class="profile-text">
+                    
+                    <form id="formMensagem">
+                        <div class="profile-textarea">
+                            <textarea name="" id="conteudo" placeholder="Digite seu post..." re></textarea>
+                        </div>
+                        <div class="space-menu"></div>
+                        <div class="profile-btn">
+                            <button type="submit" title="Publicar" id="btn-publicar">Publicar</button>
+                        </div>
+                    </form>
+                    <aside class="asidebar-text">
+                        <div class="btn-asidebar-text">
+                            <button id="btn-perfil"><img src="aaa" id="usuario-imagem"></img><i class="bi bi-person-circle icone-user"></i></button>
+                            <!-- Modal de Alerta -->
+                        
+                            <button id="btn-anonimo" value="true"><a href=""><i class="bi bi-eye-slash"></i></a></button>
+                            <button title="Refazer" id="btn-refazer"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            </section>
+
+            <section class="feed container_fluid">
+
+            <div id="feed" class="post-item">
+
+            </div>
+
+            
+            <div id="feed-comunidade" class="post-item">
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="usuario anonimo">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2><div class="mini-img"><a href="login.html"><img src="src/assets/imgs/thallesjose.png" alt=""></a></div>Thalles</h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">4</span></i>
+                                    </button>
+                                    <button class="btnCurtida"><i class="bi bi-heart"><span class="post-count like-count">27</span></i></button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>Se sentir ouvido já é um grande passo. Sinta-se à vontade para compartilhar o que está no seu coração, estamos aqui para apoiar uns aos outros.</p> 
+                        
+                            </div>
+                        </div>   
+                    </div>
+                </div>    
+
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Anônimo
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">8</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">45</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>Acredito que é essencial falar sobre saúde mental de forma aberta. Muitas vezes, as pessoas se sentem isoladas em suas lutas, e um simples 'como você está?' pode fazer toda a diferença. É importante lembrar que pedir ajuda é um sinal de força.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Anônimo
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">7</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">48</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>Nos últimos meses, percebi como a saúde mental impacta minha vida diária. Criar um espaço seguro para discutir sentimentos e preocupações tem sido fundamental para meu bem-estar. Recomendo que todos busquem apoio e pratiquem o autocuidado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Junior Rodrigues
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">9</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">50</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>O feedback que recebi sobre minha saúde mental me ajudou a perceber a importância de estabelecer limites. Aprendi que cuidar de mim mesmo não é egoísmo, e isso tem feito uma grande diferença na minha qualidade de vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Anônimo
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">6</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">42</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>Quero agradecer àqueles que me apoiaram em momentos difíceis. Conversar sobre saúde mental não é fácil, mas compartilhar experiências e ouvir os outros é um passo importante para quebrar estigmas e promover a compreensão.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Arthur Fernandes
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">4</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">39</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>Uma das coisas mais valiosas que aprendi sobre saúde mental é que não precisamos enfrentar isso sozinhos. Compartilhar minhas experiências com amigos e familiares tem sido um alívio e um caminho para a cura. Vamos continuar essa conversa!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="src/assets/imgs/robertodasilva.jpg" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Roberto da Silva
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">3</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">33</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>Muitas pessoas ainda têm vergonha de falar sobre saúde mental, mas isso precisa mudar. Precisamos criar mais espaço para conversas sobre o tema, para que as próximas gerações cresçam sem esse estigma.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Anônimo
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">2</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">27</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>A forma como a sociedade lida com questões de saúde mental muitas vezes não ajuda. Falar abertamente sobre isso é o primeiro passo para que possamos criar um ambiente de apoio real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Anônimo
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">5</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">38</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>A prática do autocuidado tem sido transformadora para mim. Nunca imaginei o impacto positivo que pequenos momentos de pausa podem ter na saúde mental.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Anônimo
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">6</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">44</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>Percebi que falar sobre meus sentimentos é importante, mas também ouvir os outros com empatia e respeito é essencial. Somos todos humanos e precisamos de apoio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-top">
+                                <div class="post-top-content">
+                                    <h2>
+                                        <div class="mini-img">
+                                            <a href="login.html">
+                                                <img src="assets/users/user-anonimo.png" alt="Imagem do autor">
+                                            </a>
+                                        </div>
+                                        Anônimo
+                                    </h2>
+                                </div>
+                                <div class="post-interaction">
+                                    <button type="button" id="btnComentarios">
+                                        <i class="bi bi-chat-dots"><span class="post-count comment-count">5</span></i>
+                                    </button>
+                                    <button class="btnCurtida">
+                                        <i class="bi bi-heart"><span class="post-count like-count">41</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p>Saúde mental não é uma luta que se vence sozinho. Buscar ajuda e criar um círculo de apoio são passos essenciais para superar os desafios que enfrentamos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+</body>
+</html>

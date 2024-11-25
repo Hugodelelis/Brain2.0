@@ -27,11 +27,11 @@ function inicializarUsuarios() {
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
     const usuariosPreDefinidos = [
-        { email: 'lucas@gmail.com', user: 'Lucas', pass: '123' },
-        { email: 'hugo@gmail.com', user: 'Hugo', pass: '123' },
-        { email: 'thalles@gmail.com', user: 'Thalles', pass: '123' },
-        { email: 'marcos@gmail.com', user: 'Marcos', pass: '123' },
-        { email: 'caio@gmail.com', user: 'Caio', pass: '123' },
+        { email: 'lucas@gmail.com', user: 'Lucas Corrêa', pass: '123', src: 'assets/users/u6.svg' },
+        { email: 'hugo@gmail.com', user: 'Hugo de Lelis', pass: '123', src: 'assets/users/u1.svg' },
+        { email: 'thalles@gmail.com', user: 'Thalles Jose', pass: '123', src: 'assets/users/u5.svg' },
+        { email: 'marcos@gmail.com', user: 'Marcos Paulo', pass: '123', src: 'assets/users/u4.svg' },
+        { email: 'caio@gmail.com', user: 'Caio Quintela', pass: '123', src: 'assets/users/u7.svg' },
         { email: 'mylena@gmail.com', user: 'Mylena', pass: '123' }
     ];
 
@@ -40,10 +40,15 @@ function inicializarUsuarios() {
     }
 }
 
+// Define o estado de logado como `false` ao carregar a página apenas se a chave não estiver definida
 document.addEventListener('DOMContentLoaded', function() {
     inicializarUsuarios();
+    if (!sessionStorage.getItem('usuarioEstaLogado')) {
+        sessionStorage.setItem('usuarioEstaLogado', 'false');
+    }
 });
 
+// Lógica para realizar login e alterar estado
 let botaoLogin = document.getElementById('btnlogin');
 
 if (botaoLogin) {
@@ -65,11 +70,18 @@ if (botaoLogin) {
         );
 
         if (usuarioEncontrado) {
+            // Se o login for bem-sucedido, atualiza o estado para `true`
+            sessionStorage.setItem('usuarioImagem', usuarioEncontrado.src || '');
             sessionStorage.setItem('usuarioLogado', usuarioEncontrado.user);
             sessionStorage.setItem('sair', '<li><button class="dropdown-item" id="leave">Sair</button></li>');
+            sessionStorage.setItem('usuarioEstaLogado', 'true');
+
             window.location.href = 'index.html';
         } else {
             exibirAlerta('danger', 'Email ou senha inválidos.');
         }
     });
 }
+
+
+

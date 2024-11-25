@@ -28,7 +28,7 @@ footer {
     background-color: var(--grey-30);
     background-position: fixed;
     margin-top: 1em;
-    min-height: 100%;
+    min-height: 5em;
     display: flex;
 }
 

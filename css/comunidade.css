@@ -1,0 +1,377 @@
+:root {
+    --blue: #205072;
+    --blue-010: #002c53;
+
+    --green: #32909C;
+    --green-010: #56C595;
+    --green-020: #7BE495;
+    --green-030: #CFF3D2;
+
+    --grey: #b1b1b1;
+    --grey-30:#d9d9d961;
+
+    --black: rgb(55 65 81);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+main{
+    display: block;
+    height: auto;
+    background: linear-gradient(0deg,var(--white),var(--green));
+    padding-bottom: 20px;
+}
+
+.container_fluid{
+    width: 50%;
+}
+
+.icon-user{
+    color: var(--black);
+    display: grid;
+}
+
+section{
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.logo-icone{
+    transition: 0.4s all ease;
+}
+
+.logo-icone:hover{
+    transition: 0.4s all ease;
+    transform: scale(1.22);
+}
+
+.profile-text-container{
+    width: 100%;
+    background-color: var(--white);
+    height: 200px;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 1.6em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile-text{
+    display: flex;
+    justify-content: space-between; /* Deixa espaço entre o aside e o form */
+    align-items: flex-start;
+}
+
+.asidebar-text {
+    padding: 10px;
+    height: 100%;
+    max-height: fit-content;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    flex-direction: column;
+}
+.btn-asidebar-text{
+    display: flex;
+    flex-direction: column;
+}
+.btn-asidebar-text button{
+    background-color: transparent;
+}
+
+.btn-asidebar-text button:hover{
+    transform: scale(0.90);
+    transition: 0.4s all ease;
+}
+
+.btn-asidebar-text button a{
+    background-color: transparent;
+    margin-top:1px ;
+    width: 100%;
+    color: var(--black)
+}
+
+.btn-asidebar-text button a:hover{
+    color: var(--blue);
+    transition: 0.4s all ease;
+    transform: scale(0.93);
+}
+#btn-perfil{
+    margin-bottom: 0.2em;
+}
+
+#btn-perfil img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+#usuario-imagem {
+    display: none; 
+}
+
+.icone-user{
+    display: grid;
+    color: var(--black);
+    padding-bottom:0.2em;
+}
+#btn-refazer{
+    color: var(--black);
+}
+#btn-refazer:hover{
+    color: var(--blue);
+}
+
+form{
+    width: 90%;
+    height: 100%;
+}
+.profile-textarea{
+    width: 100%;
+    height: 80%;
+}
+
+.profile-textarea textarea:focus {
+    outline: none;
+}
+.profile-textarea textarea::placeholder{
+    font-style: italic;
+    opacity: 0.7;
+}
+    
+.profile-textarea textarea{
+    padding: 1rem;
+    width: 100%;
+    resize: none;
+    border: none;             
+}
+.space-menu{
+    width: 100%;
+    height: 20px;
+}
+
+.profile-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    margin:1.5rem 0;
+}
+#btn-publicar{
+    color: var(--black);
+    background-color: var(--blue);
+    transition: 0.4s all ease;
+    padding: 0.5em 1em;
+    border: 2px solid var(--blue);
+    color: var(--white);
+    border-radius: 0.6em;
+    font-weight: 700;
+}
+#btn-publicar:hover{
+    transform: scale(0.90);
+    border: 2px solid var(--blue);
+    background-color: transparent;
+    color: var(--blue-010);
+    cursor: pointer;
+}
+.feed{
+    width: 50%;
+    align-self: center;
+    display: flex;
+    gap: 20px;
+}
+
+.post-item{
+    align-self: center;
+    display: flex;
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: 0.4s all ease;
+
+}
+.post-item:hover{
+    transition: 0.4s all ease;
+    gap: 20px;
+    transform: scale(1.01);
+}
+
+
+.post{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.post-img{
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    padding: 20px;
+    margin: 1rem;
+}
+.post-img img{
+    border-radius: 50%;
+    width: 100px;
+    height: 92px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.post-content{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.post-top{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-self: center;
+}
+.post-top h2{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.post-top-content{
+    width: 60%;
+}
+.post-interaction{
+    width: 40%;
+    text-align: end;
+    font-style: normal;
+}
+.post-interaction span{
+    font-style: normal;
+    font-size: 20px;
+}
+.post-count{
+    padding: 0.2em;
+}
+
+.post-interaction button{
+    background-color: transparent;
+    background: none;
+    font-size: 25px;
+    margin: 0 5px;
+    color: var(--black);
+    transition: 0.4s all ease;
+}
+
+.post-interaction button:hover{
+    transform: scale(0.95);
+}
+
+.btnCurtida i.bi-heart {
+    color: var(--black);
+}
+  
+.btnCurtida i.bi-heart-fill {
+    color: rgb(172, 58, 58);
+}
+  
+.post-text{
+    width: 100%;
+    height: 60%;
+}
+
+.mini-img{
+    display: none;
+}
+
+@media(max-width:1268px){
+    .container_fluid{
+        width: 70%;
+    }
+    .mini-img{
+        display: none;
+    }
+    .space-menu{
+        height: 5px
+    }
+    .profile-btn{
+        margin: 1rem 0;
+    }
+}
+
+@media(max-width:853px){
+
+    .container_fluid{
+        width: 70%;
+    }
+}
+
+@media(max-width:628px){
+    .logo-comunidade{
+        margin: 2.5rem 0 0;
+        padding: 1rem;
+    }
+    .container_fluid{
+        width: 100%;
+        margin: 0;
+    }
+    .profile-container{
+        width: 90%;
+        margin: 20px;
+        border-radius: 0%;
+    }
+    .post-item{
+        width: 100%;
+    }
+    .post-item:hover{
+        transform: scale(0.99)
+    }
+    .post{
+        width: 100%;
+        border-radius: 0%;
+    }
+    .post-img{
+        display: none;
+    }
+    .mini-img {
+        width: 35px;
+        display: grid;
+    }
+    .mini-img img{
+        width: 35px;
+        margin: 12px 0;
+        border-radius: 50%;
+
+    }
+    .post-content{
+        width: 100%;
+        margin: 1rem;
+    }
+    .post-text{
+        padding: 0%;
+    }
+    .post-interaction{
+        display: block;margin-top: 10px;
+    }
+    .post-interaction button{
+        font-size: 20px;
+    }
+    .post-top-content{
+        gap: 20px;
+    }
+    
+}
