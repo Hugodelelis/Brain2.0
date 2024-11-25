@@ -13,7 +13,10 @@ window.addEventListener('load', () => {
         });
 
         document.querySelectorAll('#login-drop').forEach(function(element) {
-            element.innerHTML = sair;
+            element.innerHTML = `
+            ${sair}
+            <li><a class="dropdown-item" href="editar.html">Editar</a></li>
+            `;
         });
 
         document.querySelector('#leave').addEventListener('click', function() {
