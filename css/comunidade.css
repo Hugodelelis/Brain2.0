@@ -25,7 +25,9 @@ body {
 }
 
 main{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     background: linear-gradient(0deg,var(--white),var(--green));
     padding-bottom: 20px;
