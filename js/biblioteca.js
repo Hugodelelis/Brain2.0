@@ -1,6 +1,9 @@
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 20, 
   freeMode: true,
+  slidesPerView: 'auto',
+  loop: true,
+  centeredSlides: false,
   breakpoints: {
     320: {
       slidesPerView: 1,

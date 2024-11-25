@@ -44,6 +44,7 @@ section{
     height: 100%;
     display: flex;
     justify-self: center;
+    align-items: center;
     margin: 1rem;
     flex-direction: column;
 }

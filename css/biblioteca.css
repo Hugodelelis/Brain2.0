@@ -123,8 +123,10 @@ input:-webkit-autofill {
 
 .swiper {
     margin-top: 1.5em;
-    width: 100%;
+    width: 100vw;
     min-height: 20em;
+    overflow: visible;
+    margin-left: 1.5em;
 }
 
 .swiper-slide {
@@ -134,10 +136,11 @@ input:-webkit-autofill {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1.2em 1.5em;
     background-color: #F5F5F5;
+    margin-top: 0.7em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 1em;
+    margin-left: 1.5em;
 }
 
 .controls {
