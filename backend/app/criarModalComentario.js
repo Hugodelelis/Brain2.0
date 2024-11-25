@@ -35,7 +35,7 @@ function criarModal() {
 
                           <div class="comment">
                               <div class="comment-img">
-                                  <img src="src/assets/imgs/hugo.png" alt="">
+                                  <img src="src/assets/imgs/.png" alt="">
                               </div>
                               <div class="comment-content">
                                   <div class="comment-top">
